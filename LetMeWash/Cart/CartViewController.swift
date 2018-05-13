@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CartViewController: UIViewController {
+class CartViewController: UIViewController { 
 
     var scrollView:UIScrollView!
     var totalAmountLabel:UILabel!
