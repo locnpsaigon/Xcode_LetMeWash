@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "CartViewController.viewWillAppear(Bool) -&gt; ():CartViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Cart.getItemsCount()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MessageDetailsViewController.showMessage(message : Message?) -&gt; ():MessageDetailsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "dateLabel.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static MessageSummary.fromDictionary(dict : NSDictionary) -&gt; MessageSummary?:MessageSummary.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "dict[&quot;read&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OrderViewController.tableView(UITableView, cellForRowAt : IndexPath) -&gt; UITableViewCell:OrderViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "orders">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static APIService.saveOrder(phone : String, fullname : String, address : String, note : String, serviceBookings : [ServiceBooking], handler : (Bool, String) -&gt; ()) -&gt; ():APIService.swift">
+      </ContextState>
+      <ContextState
+         contextName = "CheckOutViewController.checkOut() -&gt; ():CheckOutViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ServiceDetailsViewController.relayoutControls(frameSize : CGSize) -&gt; ():ServiceDetailsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "frameSize.width - splitterPosition - 12">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static Cart.removeCartItemServiceDetails(itemId : Int) -&gt; ():Cart.swift">
+      </ContextState>
+      <ContextState
+         contextName = "OrderDetailsViewController.showOrderDetails(frameSize : CGSize, order : Order, orderDetails : [OrderDetails]) -&gt; ():OrderDetailsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "UIDevice.current.orientation">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static APIService.(getServiceGroups(handler : ([String]?, String) -&gt; ()) -&gt; ()).(closure #1):APIService.swift">
+      </ContextState>
+      <ContextState
+         contextName = "CartViewController.relayoutControls(frameSize : CGSize) -&gt; ():CartViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "checkoutButton">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MessageViewController.tableView(UITableView, willDisplay : UITableViewCell, forRowAt : IndexPath) -&gt; ():MessageViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "maxRows">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+            <PersistentString
+               value = "isLoading">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "MessageDetailsViewController.viewDidLoad() -&gt; ():MessageDetailsViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "message">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "HomeViewController.showMessageSummary(summary : MessageSummary?) -&gt; ():HomeViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.notificationButton">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

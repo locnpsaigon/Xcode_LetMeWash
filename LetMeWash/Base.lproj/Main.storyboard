@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FLE-1b-u5X">
+    <device id="ipad10_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Trang chủ-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Trang chủ" id="BYZ-38-t0r" customClass="HomeViewController" customModule="LetMeWash" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="qPR-iz-EFF">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Oyp-SS-flq">
+                            <size key="itemSize" width="100" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ServiceGroupViewCell" id="zfG-s2-cRI">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Nhóm dịch vụ" id="AxL-wM-znc"/>
+                    <connections>
+                        <outlet property="seviceGroupCollectioView" destination="qPR-iz-EFF" id="iUi-pT-nYo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1312" y="-49"/>
+        </scene>
+        <!--Dịch vụ-->
+        <scene sceneID="ynm-EI-Pen">
+            <objects>
+                <tableViewController storyboardIdentifier="ServiceVC" title="Dịch vụ" id="0Bp-Pp-a1M" customClass="ServiceViewController" customModule="LetMeWash" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="69" sectionHeaderHeight="28" sectionFooterHeight="28" id="v1I-8R-7ji">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ServiceCell" rowHeight="72" id="Ppo-w3-bWH" customClass="ServiceViewCell" customModule="LetMeWash" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="834" height="72"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ppo-w3-bWH" id="x2e-Wc-MFw">
+                                    <rect key="frame" x="0.0" y="0.0" width="834" height="72"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9Pr-8o-Jbb">
+                                            <rect key="frame" x="8" y="8" width="60" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="60" id="vWB-ks-2gm"/>
+                                                <constraint firstAttribute="height" constant="60" id="wAm-HV-9DS"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vx0-Aa-hit">
+                                            <rect key="frame" x="76" y="20" width="742" height="17"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="enA-eG-TyG">
+                                            <rect key="frame" x="76" y="41" width="742" height="14.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="enA-eG-TyG" firstAttribute="top" secondItem="vx0-Aa-hit" secondAttribute="bottom" constant="4" id="4wv-eY-2hI"/>
+                                        <constraint firstItem="vx0-Aa-hit" firstAttribute="top" secondItem="x2e-Wc-MFw" secondAttribute="topMargin" constant="12" id="DEy-zT-YOH"/>
+                                        <constraint firstItem="9Pr-8o-Jbb" firstAttribute="leading" secondItem="x2e-Wc-MFw" secondAttribute="leading" constant="8" id="JQi-xQ-DRl"/>
+                                        <constraint firstItem="enA-eG-TyG" firstAttribute="leading" secondItem="9Pr-8o-Jbb" secondAttribute="trailing" constant="8" id="WA0-aV-Cpm"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="enA-eG-TyG" secondAttribute="trailing" constant="8" id="i3u-3e-hhM"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="vx0-Aa-hit" secondAttribute="trailing" constant="8" id="ikZ-Ox-cGC"/>
+                                        <constraint firstItem="9Pr-8o-Jbb" firstAttribute="top" secondItem="x2e-Wc-MFw" secondAttribute="top" constant="8" id="peT-8m-ex4"/>
+                                        <constraint firstItem="vx0-Aa-hit" firstAttribute="leading" secondItem="9Pr-8o-Jbb" secondAttribute="trailing" constant="8" id="sSp-YI-faN"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="enA-eG-TyG" id="nFR-F4-Boh"/>
+                                    <outlet property="iconImage" destination="9Pr-8o-Jbb" id="xUR-Ot-l81"/>
+                                    <outlet property="nameLabel" destination="vx0-Aa-hit" id="ouF-pb-Ri3"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="0Bp-Pp-a1M" id="X0R-b4-agf"/>
+                            <outlet property="delegate" destination="0Bp-Pp-a1M" id="Ylf-Pt-3ts"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Axf-6E-g9r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2114" y="-49"/>
+        </scene>
+        <!--Trang chủ-->
+        <scene sceneID="rZJ-Vh-7RW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bRs-jP-cwM" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Trang chủ" image="ic_home" id="r4v-Z0-u8o"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2mB-YL-biw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vs7-qL-btq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OUp-V9-Nak" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="540" y="-49"/>
+        </scene>
+        <!--Giỏ hàng-->
+        <scene sceneID="neS-mR-dhb">
+            <objects>
+                <navigationController id="3qr-Dm-9j7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Giỏ hàng" image="ic_basket" id="sga-4K-Rgh"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Xu-Wz-lw9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Jwu-NE-9ym" kind="relationship" relationship="rootViewController" id="IAG-Ox-tg6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tJW-jK-JIV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="540" y="1251"/>
+        </scene>
+        <!--Giỏ hàng-->
+        <scene sceneID="dvl-sn-tHj">
+            <objects>
+                <viewController storyboardIdentifier="CartVC" title="Giỏ hàng" id="Jwu-NE-9ym" customClass="CartViewController" customModule="LetMeWash" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fIc-0w-Ozq"/>
+                        <viewControllerLayoutGuide type="bottom" id="gm2-Hl-NEt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hbP-UN-1eC">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="AE6-Q2-O6x"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QOm-k7-hA0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1312" y="1251"/>
+        </scene>
+        <!--Tài khoản-->
+        <scene sceneID="y5s-wW-ePw">
+            <objects>
+                <tableViewController storyboardIdentifier="AccountVC" title="Tài khoản" id="CFX-bJ-n54" customClass="AccontViewController" customModule="LetMeWash" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="rKo-yD-ph8">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AccountMenuCell" id="As4-q4-g9W">
+                                <rect key="frame" x="0.0" y="28" width="834" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="As4-q4-g9W" id="KpS-Yr-pBH">
+                                    <rect key="frame" x="0.0" y="0.0" width="834" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="CFX-bJ-n54" id="zaW-eY-e2r"/>
+                            <outlet property="delegate" destination="CFX-bJ-n54" id="AKr-kg-6A5"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="24m-mw-jo5"/>
+                    <connections>
+                        <outlet property="menuTable" destination="rKo-yD-ph8" id="7PG-1T-FUm"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1gd-L3-BzZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1312" y="1900"/>
+        </scene>
+        <!--Tài khoản-->
+        <scene sceneID="j0J-lo-bSD">
+            <objects>
+                <navigationController id="YQf-y2-dow" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tài khoản" image="ic_guest" id="fIX-Ur-TBT"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aDB-aS-0b3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="CFX-bJ-n54" kind="relationship" relationship="rootViewController" id="xY3-iH-8LV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7bk-KY-DE9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="540" y="1900"/>
+        </scene>
+        <!--Đơn hàng-->
+        <scene sceneID="uq1-bJ-14e">
+            <objects>
+                <tableViewController storyboardIdentifier="OrderVC" title="Đơn hàng" id="xcC-mY-Lzy" customClass="OrderViewController" customModule="LetMeWash" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="dGU-0c-wUv">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="xcC-mY-Lzy" id="XUw-tb-mM5"/>
+                            <outlet property="delegate" destination="xcC-mY-Lzy" id="zH7-F9-xb0"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="Jut-6Q-STk"/>
+                    <connections>
+                        <outlet property="orderTable" destination="dGU-0c-wUv" id="Oxt-pq-OeF"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D8b-q9-147" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1312" y="599"/>
+        </scene>
+        <!--Đơn hàng-->
+        <scene sceneID="VOv-kE-XEc">
+            <objects>
+                <navigationController id="8zO-kV-EIR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Đơn hàng" image="ic_documents" id="XBT-vS-Qe4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dwO-ne-Qhu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xcC-mY-Lzy" kind="relationship" relationship="rootViewController" id="yRO-nf-3fE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Xe-ff-BwW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="540" y="599"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="dKy-qs-OrX">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="FLE-1b-u5X" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="WhC-o2-sy1">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="bRs-jP-cwM" kind="relationship" relationship="viewControllers" id="BA7-P0-zNx"/>
+                        <segue destination="8zO-kV-EIR" kind="relationship" relationship="viewControllers" id="paR-G3-ubU"/>
+                        <segue destination="3qr-Dm-9j7" kind="relationship" relationship="viewControllers" id="e6Q-QZ-jqc"/>
+                        <segue destination="YQf-y2-dow" kind="relationship" relationship="viewControllers" id="yqj-cR-YZw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PAb-85-ali" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-664" y="1900"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_basket" width="25" height="25"/>
+        <image name="ic_documents" width="25" height="25"/>
+        <image name="ic_guest" width="25" height="25"/>
+        <image name="ic_home" width="25" height="25"/>
+    </resources>
+</document>

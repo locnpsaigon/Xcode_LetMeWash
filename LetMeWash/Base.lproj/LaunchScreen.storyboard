@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_logo2" translatesAutoresizingMaskIntoConstraints="NO" id="9jA-dP-bp9">
+                                <rect key="frame" x="96" y="140" width="128" height="133"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="133" id="elG-C4-BKl"/>
+                                    <constraint firstAttribute="width" constant="128" id="wFv-1Q-JXs"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright (C) 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czU-oy-B5O">
+                                <rect key="frame" x="87" y="451" width="145" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="LYd-ju-De6"/>
+                                    <constraint firstAttribute="width" constant="145" id="LvT-TZ-WtQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash_slogan" translatesAutoresizingMaskIntoConstraints="NO" id="s3S-dD-vGC">
+                                <rect key="frame" x="70" y="281" width="180" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="1UW-TI-F0M"/>
+                                    <constraint firstAttribute="width" constant="180" id="ETv-3S-KEW"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9jA-dP-bp9" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="120" id="44M-eh-yRD"/>
+                            <constraint firstItem="czU-oy-B5O" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="LPU-ra-MJl"/>
+                            <constraint firstItem="9jA-dP-bp9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="nOm-y1-LnG"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="czU-oy-B5O" secondAttribute="bottom" constant="8" id="vZU-Nm-hNH"/>
+                            <constraint firstItem="s3S-dD-vGC" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="wbz-7A-7qW"/>
+                            <constraint firstItem="s3S-dD-vGC" firstAttribute="top" secondItem="9jA-dP-bp9" secondAttribute="bottom" constant="8" id="yb0-Sq-oJK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="50.625" y="373.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="splash_logo2" width="256" height="265"/>
+        <image name="splash_slogan" width="320" height="44"/>
+    </resources>
+</document>
